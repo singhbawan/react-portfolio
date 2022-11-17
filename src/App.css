@@ -1,38 +1,172 @@
+:root {
+  --bg-color-1: #393E46;
+  --bg-color-2: #6D9886;
+  --bg-color-3: #F2E7D5;
+  --bg-color-4: #F7F7F7;
+
+  --ff-primary: "Roboto", sans-serif, monospace;
+  --ff-secondary: "Open Sans", sans-serif, "Lucida Grande";
+
+  --fw-reg: 300;
+  --fw-med: 700;
+  --fw-bold: 900;
+
+  --clr-light: #e4e4e4;
+  --clr-darkerdark: #020008;
+  --clr-dark: #1d1d1d;
+  --clr-lightdark: #6c706f;
+  --clr-accent: #2debe1;
+
+  --fs-h1: 2.75rem;
+  --fs-h2: 2.125rem;
+  --fs-h3: 1.375rem;
+  --fs-body: 1rem;
+  --fs-title: 3rem;
+
+  --test: red 2px solid;
+}
+
+
+.btn1 {
+  background: var(--clr-dark);
+  border: var(--clr-accent) 4px solid;
+  border-radius: 5em;
+  padding: 0.25em 0.25em;
+  color: var(--clr-light);
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  width: max-content;
+}
+
+.btn1:hover {
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-color: var(--bg-color-1);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: var(--bg-color-4);
+  font-size: 45px;
 }
 
-.App-link {
-  color: #61dafb;
+.name1{
+  margin-right: 100px;
+  font-size: x-large;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav{
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+}
+
+
+.intro {
+  display: flex;
+  flex-flow: column;
+  margin: 2em 0;
+  padding: 0 1em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+  color: var(--clr-light);
+  font-size: var(--fs-h1);
+}
+
+.section__div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+/* image of logo B in the intro h1 */
+.section__image--intro-logo {
+  display: inline;
+  width: var(--fs-h1);
+  margin: 0;
+}
+
+/* Profile picture */
+.section__image--intro {
+  border: var(--clr-accent) 4px solid;
+  border-radius: 5em;
+}
+
+.section__image--intro:hover {
+  opacity: 0.75;
+}
+
+/* END intro */
+
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.section__image--portfolio {
+  border-radius: 10%;
+  margin: 1em 1em;
+  width: 27vw;
+  border: var(--clr-accent) 4px solid;
+}
+
+.portfolio__item:hover {
+  opacity: 1;
+}
+
+.portfolio__item:hover .section__image--portfolio {
+  transform: scale(1.125);
+}
+
+.portfolio__item {
+  position: relative;
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 35%;
+  right: 35%;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+  font-size: var(--fs-h3);
+  pointer-events: none;
+  display: none;
+  text-align: center;
+  padding-top: 1.5em;
+  color: var(--clr-darkerdark);
+}
+
+.portfolio__item:hover .overlay {
+  display: block;
+}
+
+.social-list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-list__item {
+  padding: 0 2em;
+  list-style: none;
+}
+
+.social-list__link img {
+  width: 100px;
+  opacity: 0.8;
 }
