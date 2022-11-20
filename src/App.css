@@ -44,6 +44,16 @@
   color: var(--clr-dark);
 }
 
+.container1{
+  
+  display: flex;
+  width: max-content;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
+
 .App {
   text-align: center;
   min-height: 100vh;
@@ -53,7 +63,8 @@
   justify-content: center;
   align-items: center;
   color: var(--bg-color-4);
-  font-size: 45px;
+  
+  position: relative;
 }
 
 .name1{
@@ -121,6 +132,7 @@
   margin: 1em 1em;
   width: 27vw;
   border: var(--clr-accent) 4px solid;
+  z-index: 1;
 }
 
 .portfolio__item:hover {
@@ -139,17 +151,23 @@
 .overlay {
   position: absolute;
   top: 35%;
-  right: 35%;
+  right: 15%;
   width: 6em;
   height: 6em;
   border-radius: 50%;
   background-color: var(--clr-accent);
   font-size: var(--fs-h3);
-  pointer-events: none;
+ 
   display: none;
   text-align: center;
-  padding-top: 1.5em;
+  padding-top: 45px;
   color: var(--clr-darkerdark);
+  z-index: 99;
+}
+
+.offset1{
+ 
+  right: 55%;
 }
 
 .portfolio__item:hover .overlay {
@@ -170,3 +188,5 @@
   width: 100px;
   opacity: 0.8;
 }
+
+
