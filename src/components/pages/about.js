@@ -17,7 +17,7 @@ function About({handlePageChange}){
             <a className="btn1" href="#contact" onClick={() => handlePageChange("Contact")}>Contact me!</a>
         </div>
         <img className="section__image--intro" src="./profile pic.jpg"
-            alt="Black and white profile picture of Bawandeep smiling"></img>
+            alt="Black and white profile of Bawandeep smiling"></img>
     </section>
         </div>
       );

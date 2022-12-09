@@ -6,11 +6,11 @@ function Cardlinked(props) {
         <div className="portfolio__item">
      
         <img className="section__image--portfolio" src={image} alt=""></img>
-        <a  href={link} target="_blank">
+        <a  href={link} target="_blank"  rel="noreferrer">
             
         <div className="overlay ">View Project</div>
       </a>
-      <a href={repo} target="_blank"><div className="overlay offset1">View Repo</div></a>
+      <a href={repo} target="_blank"  rel="noreferrer"><div className="overlay offset1">View Repo</div></a>
       </div>
     </div>
   );

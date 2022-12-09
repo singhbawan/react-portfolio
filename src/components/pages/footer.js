@@ -5,19 +5,19 @@ function Footer(){
         <footer>
         <ul className="social-list">
             <li className="social-list__item">
-                <a className="social-list__link" href="https://github.com/singhbawan" target="_blank">
+                <a className="social-list__link" href="https://github.com/singhbawan" target="_blank"  rel="noreferrer">
                     <img src="./github.png" alt=""></img>
                 </a>
             </li>
             <li className="social-list__item">
                 <a className="social-list__link" href="https://www.linkedin.com/in/bawandeep-singh-394b32175/"
-                    target="_blank">
+                    target="_blank"  rel="noreferrer">
                     <img src="./linkedin (2).png" alt=""></img>
                 </a>
             </li>
             <li className="social-list__item">
                 <a className="social-list__link" href="https://stackoverflow.com/users/19310745/bawandeep-singh"
-                    target="_blank">
+                    target="_blank"  rel="noreferrer">
                     <img style={{width:75}} src="./stack-overflow.svg" alt=""></img>
                    
                 </a>
