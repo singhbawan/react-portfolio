@@ -22,6 +22,11 @@ function Portfolio() {
       link: "https://singhbawan.github.io/reactor/",
       repo: "https://github.com/singhbawan/reactor"
     },
+    {
+      image: "./starship.png",
+      link: "https://still-cliffs-68409.herokuapp.com/dashboard/app ",
+      repo: "https://github.com/FOR-TIMI/Starship"
+    },
   ];
 
   return (
